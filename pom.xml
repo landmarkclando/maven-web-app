@@ -22,7 +22,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://13.48.71.19:9000/</sonar.host.url>
+		<sonar.host.url>http://51.20.44.136:9000/</sonar.host.url>
 		<sonar.login>admin</sonar.login>
 		<sonar.password>admin</sonar.password>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -96,13 +96,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Releases Nexus Repository</name>
-	      <url>http://13.48.71.19:8081/repository/newproject-repo/</url>
+	      <url>http://51.20.44.136:8081/repository/newproject-repo/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Landmark Technologies Snapshot Nexus Repository </name>
-	      <url>http://13.48.71.19:8081/repository/newproject-snap/</url>
+	      <url>http://51.20.44.136:8081/repository/newproject-snap/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
@@ -144,8 +144,9 @@
 					<wtpContextName>maven-web-application</wtpContextName>
 				</configuration>
 			</plugin>
-			
-			<plugin>
+
+			<!--
+		        <plugin>
 
                                  <groupId>org.sonarsource.scanner.maven</groupId>
                                  <artifactId>sonar-maven-plugin</artifactId>
@@ -153,7 +154,8 @@
 
                         </plugin>
                    </plugins>
-	</build>
+			--> 
+	      </build>    
 	
 	
 </project>
